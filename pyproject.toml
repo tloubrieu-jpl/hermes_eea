@@ -26,8 +26,10 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Physics",
 ]
 dependencies = [
-  'hermes_core @ git+https://github.com/HERMES-SOC/hermes_core/',
-  'ccsdspy @ git+https://github.com/ddasilva/ccsdspy.git'
+  'hermes_core @ git+https://github.com/HERMES-SOC/hermes_core@010b4b2a0ff92d305cafacb12b2c8f902bc010fa',
+  #'ccsdspy @ git+https://github.com/ddasilva/ccsdspy.git',
+    'ccsdspy==2.0.1',
+    'spac_kit==1.0.1'
 ]
 
 [project.optional-dependencies]
@@ -42,8 +44,9 @@ dev = [
 ]
 
 docs = [
-  'sphinx==7.2.6',
-  'sphinx-automodapi==0.16.0'
+  #'sphinx==7.2.6',
+    'sphinx==9.1.0',
+  'sphinx-automodapi==0.22.0'
 ]
 
 test = [
