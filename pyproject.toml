@@ -27,9 +27,8 @@ classifiers = [
 ]
 dependencies = [
   'hermes_core @ git+https://github.com/HERMES-SOC/hermes_core@010b4b2a0ff92d305cafacb12b2c8f902bc010fa',
-  #'ccsdspy @ git+https://github.com/ddasilva/ccsdspy.git',
-    'ccsdspy==2.0.1',
-    'spac_kit==1.0.1'
+  'ccsdspy @ git+https://github.com/ccsdspy/ccsdspy@issue_159',
+    'spac-kit @ git+https://github.com/ccsdspy/spac-kit@issue_89',
 ]
 
 [project.optional-dependencies]

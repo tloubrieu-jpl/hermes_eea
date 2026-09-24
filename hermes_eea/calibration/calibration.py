@@ -154,7 +154,10 @@ def calibrate_file(data_filename: Path, destination_dir: Path) -> Path:
 
 
 hermes_EEA_sci_packet_def = ccsdspy.FixedLength.from_file(
-        Path(hermes_eea._data_directory) / "hermes_EEA_sci_packet_def.csv"
+        Path(hermes_eea._data_directory) / "hermes_EEA_sci_packet_def.csv",
+        apid=260,
+        name="Hermes_EEA_sci",
+        description="Hermes EEA Science Packet"
 )
 
 
